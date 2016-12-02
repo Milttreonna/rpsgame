@@ -1,0 +1,21 @@
+#rock1, #paper1, #scissor1 {
+    border-style: dotted;
+    border-color: #BF6CD1;
+    display: inline-block;
+}
+
+body {background-image: url("background.jpg"); background-repeat: no-repeat; background-size: cover;
+
+/*font-family: 'Comfortaa', cursive;*/
+font-family: 'Coming Soon';
+ }
+
+#pickedit {
+    border-style: dotted;
+    border-color: #79BED8;
+    display: inline-block;
+
+}
+#r1 {display: inline-block;}
+#p1 {display: inline-block;}
+#s1 {display: inline-block;}

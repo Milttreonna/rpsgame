@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>RPS Game</title>
+    <link href="rpsgame.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+</head>
+
+<body style="background-color:white; ">
+
+
+
+    <center>
+        <h1 style="color:pink; font-size:70px; ">Rock, Paper, Scissor!</h1>
+
+        <p style="color:#7EDC9A; font-size:20px; "><b>Instructions: </b> Enter how many rounds you want to play. You go first! Pick rock, paper, or scissor. Click on the "Computer's Turn" button and wait for it to choose. Find out who wins ◕‿◕</p>
+        <br/>
+
+        <div style="font-size:15px;">
+            <center> How many rounds?</br></br><input type="text" onload="rounds()" style="background-color:white;
+     width:20px; height:20px; font-size:15px; color:grey ; " placeholder="" id="input1" value="" maxlength="2" autofocus="" /></center>
+        </div>
+<br/>
+<hr/>
+        <div id="player1">
+            <h2 style="color: #BF6CD1;"> <b>You</b> </h2>
+
+
+            <div id="r1">
+                <p style="color:white; background-color:#C2A9F5;"><u>Rock</u></p>
+                <div id="rock1" name="rock"> <input type="image" style="height=" 100 " width="100 "" src="rock.png" alt=""></div>
+            </div>
+
+            <div id="p1">
+                <p style="color:white; background-color:#C2A9F5;"><u>Paper</u></p>
+                <div id="paper1" name="paper"> <input type="image" style="height=" 95 " width="95 "" src="paper.png" alt=""></div>
+            </div>
+
+            <div id="s1">
+                <p style="color:white; background-color:#C2A9F5;"><u>Scissor</u></p>
+                <div id="scissor1" name="scissor"> <input type="image" style="height=" 95 " width="98 "" src="scissor.png" alt=""> </div>
+            </div>
+            <div style="color: #BF6CD1;" id="picked1"></div>
+
+        </div>
+
+        <br/>
+        </br/>
+
+        <div id="player2">
+            <h2 style="color: #79BED8;">  <b>Computer</b> </h2>
+
+            <img src="" id="pickedit" style=" height=" 95 " width="98 " ">
+            <br/>
+            <button id="compButton" onclick="pickImg(img_array)">Computer's Turn</button>
+
+            <div style="color: #79BED8;" id="picked2"></div>
+        </div>
+
+    </center>
+    <script src="rpsgame.js"></script>
+</body>
+
+</html>
