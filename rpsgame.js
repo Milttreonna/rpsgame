@@ -1,15 +1,20 @@
 // function rounds() {
-//   
+//
 // }
 
+// var rounds=0
+// while (rounds< 6){
+// rounds+=1;
+
 document.getElementById("compButton").disabled = true;
+
+
 var rock1 = document.getElementById('rock1');
 rock1.onclick = function() {
     var elementsR = document.getElementById("rock1");
     var nameR = elementsR.getAttribute("name");
     document.getElementById("picked1").innerHTML = '<h2>You picked ' + nameR + " </h2>";
     document.getElementById("compButton").disabled = false;
-
     // alert("You chose rock!");
 }
 
@@ -41,6 +46,17 @@ function pickImg(imgAr) {
     document.getElementById("pickedit").src = img;
     document.getElementById("compButton").disabled = true;
 }
+
+// rounds+=1;
+
+// }
+// while (rounds< 6);
+
+
+
+
+
+
 
 // function compPicked() {
 //
